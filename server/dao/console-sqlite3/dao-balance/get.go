@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/balance-entity-service"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/balance-entity-service"
 )
 
 //Get 根据负载名获取负载配置

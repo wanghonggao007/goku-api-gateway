@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"strings"
 
-	log "github.com/eolinker/goku-api-gateway/goku-log"
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
 
-	database2 "github.com/eolinker/goku-api-gateway/common/database"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	database2 "github.com/wanghonggao007/goku-api-gateway/common/database"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 //GetPluginInfo 获取插件配置信息

@@ -5,15 +5,15 @@ import (
 	"sync"
 	"time"
 
-	log "github.com/eolinker/goku-api-gateway/goku-log"
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
 
-	console_sqlite3 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3"
+	console_sqlite3 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3"
 
-	"github.com/eolinker/goku-api-gateway/common/telegraph"
+	"github.com/wanghonggao007/goku-api-gateway/common/telegraph"
 
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 
-	"github.com/eolinker/goku-api-gateway/config"
+	"github.com/wanghonggao007/goku-api-gateway/config"
 )
 
 type versionConfig struct {

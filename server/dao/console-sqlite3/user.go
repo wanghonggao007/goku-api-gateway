@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	database2 "github.com/eolinker/goku-api-gateway/common/database"
-	"github.com/eolinker/goku-api-gateway/utils"
+	database2 "github.com/wanghonggao007/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/utils"
 )
 
 type permissionsJSON map[string]bool

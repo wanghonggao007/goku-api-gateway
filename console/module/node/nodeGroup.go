@@ -1,7 +1,7 @@
 package node
 
 import (
-	console_sqlite3 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3"
+	console_sqlite3 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3"
 )
 
 //AddNodeGroup 新建节点分组

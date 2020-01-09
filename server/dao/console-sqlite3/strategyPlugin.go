@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	database2 "github.com/eolinker/goku-api-gateway/common/database"
+	database2 "github.com/wanghonggao007/goku-api-gateway/common/database"
 )
 
 var strategyPlugins = []string{"goku-oauth2_auth", "goku-rate_limiting", "goku-replay_attack_defender"}

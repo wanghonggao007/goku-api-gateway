@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	database2 "github.com/eolinker/goku-api-gateway/common/database"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
-	"github.com/eolinker/goku-api-gateway/utils"
+	database2 "github.com/wanghonggao007/goku-api-gateway/common/database"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
+	"github.com/wanghonggao007/goku-api-gateway/utils"
 )
 
 //AddStrategy 新增策略组

@@ -1,8 +1,8 @@
 package console_sqlite3
 
 import (
-	"github.com/eolinker/goku-api-gateway/common/database"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 //GetMonitorModules 获取监控模块列表

@@ -3,18 +3,19 @@ package node
 import (
 	"encoding/json"
 	"errors"
-	"github.com/eolinker/goku-api-gateway/common/auto-form"
 
-	"github.com/eolinker/goku-api-gateway/console/module/cluster"
+	"github.com/wanghonggao007/goku-api-gateway/common/auto-form"
 
-	log "github.com/eolinker/goku-api-gateway/goku-log"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/cluster"
+
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
 
 	"net/http"
 	"strconv"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/node"
-	"github.com/eolinker/goku-api-gateway/utils"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/node"
+	"github.com/wanghonggao007/goku-api-gateway/utils"
 )
 
 //AddNode 新增节点信息
@@ -35,11 +36,11 @@ func AddNode(httpResponse http.ResponseWriter, httpRequest *http.Request) {
 
 	//nodeNumber := rsa.CertConf["nodeNumber"].(int)
 	type NodeParam struct {
-		NodeName string `opt:"nodeName,require"`
+		NodeName      string `opt:"nodeName,require"`
 		ListenAddress string `opt:"listenAddress,require"`
-		AdminAddress string `opt:"adminAddress,require"`
-		GroupID int `opt:"groupID,require"`
-		Path string `opt:"gatewayPath"`
+		AdminAddress  string `opt:"adminAddress,require"`
+		GroupID       int    `opt:"groupID,require"`
+		Path          string `opt:"gatewayPath"`
 	}
 	//
 	//nodeName := httpRequest.PostFormValue("nodeName")
@@ -53,9 +54,9 @@ func AddNode(httpResponse http.ResponseWriter, httpRequest *http.Request) {
 	//	controller.WriteError(httpResponse, "230015", "", "[ERROR]Illegal groupID!", err)
 	//	return
 	//}
-	param:=new(NodeParam)
-	err:=auto.SetValues(httpRequest.Form,param)
-	if err!= nil{
+	param := new(NodeParam)
+	err := auto.SetValues(httpRequest.Form, param)
+	if err != nil {
 		controller.WriteError(httpResponse, "230015", "", "[ERROR]", err)
 		return
 	}
@@ -108,7 +109,7 @@ func AddNode(httpResponse http.ResponseWriter, httpRequest *http.Request) {
 	}
 	data, _ := json.Marshal(res)
 
-	_,_=httpResponse.Write(data)
+	_, _ = httpResponse.Write(data)
 }
 
 //EditNode 修改节点信息
@@ -286,8 +287,8 @@ func GetNodeInfo(httpResponse http.ResponseWriter, httpRequest *http.Request) {
 			err)
 		return
 	}
-	  result, err := node.GetNodeInfo(id)
-	if err!= nil {
+	result, err := node.GetNodeInfo(id)
+	if err != nil {
 
 		controller.WriteError(httpResponse,
 			"330000",
@@ -301,8 +302,6 @@ func GetNodeInfo(httpResponse http.ResponseWriter, httpRequest *http.Request) {
 
 	return
 }
-
-
 
 //BatchEditNodeGroup 批量修改节点分组
 func BatchEditNodeGroup(httpResponse http.ResponseWriter, httpRequest *http.Request) {

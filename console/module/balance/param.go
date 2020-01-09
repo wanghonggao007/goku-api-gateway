@@ -3,7 +3,7 @@ package balance
 import (
 	"encoding/json"
 
-	entity "github.com/eolinker/goku-api-gateway/server/entity/balance-entity-service"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/balance-entity-service"
 )
 
 //Param 负载参数

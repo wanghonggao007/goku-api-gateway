@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	database2 "github.com/eolinker/goku-api-gateway/common/database"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	database2 "github.com/wanghonggao007/goku-api-gateway/common/database"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 // AddAPI 新增接口

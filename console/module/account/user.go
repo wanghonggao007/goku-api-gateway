@@ -1,7 +1,7 @@
 package account
 
 import (
-	console_sqlite3 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3"
+	console_sqlite3 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3"
 )
 
 //GetUserListWithPermission 获取具有编辑权限的用户列表

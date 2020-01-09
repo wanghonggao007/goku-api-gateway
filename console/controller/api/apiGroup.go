@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/api"
-	"github.com/eolinker/goku-api-gateway/console/module/project"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/api"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/project"
 )
 
 //AddAPIGroup 新建接口分组

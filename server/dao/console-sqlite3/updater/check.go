@@ -4,7 +4,7 @@ import (
 	SQL "database/sql"
 	"fmt"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
 )
 
 //IsTableExist 检查table是否存在

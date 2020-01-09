@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/service"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/service"
 )
 
 func getInfo(w http.ResponseWriter, r *http.Request) {

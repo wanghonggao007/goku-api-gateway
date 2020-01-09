@@ -3,7 +3,7 @@ package strategy
 import (
 	"errors"
 
-	console_sqlite3 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3"
+	console_sqlite3 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3"
 )
 
 //AddStrategyGroup 新建策略组分组

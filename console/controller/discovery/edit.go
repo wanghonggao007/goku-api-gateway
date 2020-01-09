@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/eolinker/goku-api-gateway/common/auto-form"
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/service"
-	driver2 "github.com/eolinker/goku-api-gateway/server/driver"
+	"github.com/wanghonggao007/goku-api-gateway/common/auto-form"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/service"
+	driver2 "github.com/wanghonggao007/goku-api-gateway/server/driver"
 )
 
 func edit(w http.ResponseWriter, r *http.Request) {

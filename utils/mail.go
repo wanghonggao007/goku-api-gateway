@@ -6,7 +6,7 @@ import (
 	"net/smtp"
 	"strings"
 
-	log "github.com/eolinker/goku-api-gateway/goku-log"
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
 )
 
 //SendToMail 发送邮件

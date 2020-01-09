@@ -3,7 +3,7 @@ package dao_service
 import (
 	"fmt"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
 )
 
 const sqlDelete = "DELETE FROM  `goku_service_config` WHERE  `name` = ? AND NOT EXISTS (SELECT * FROM `goku_balance` B WHERE B.`serviceName` =  `goku_service_config`.`name` ) "

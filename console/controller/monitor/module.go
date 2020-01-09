@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/pkg/errors"
+	"github.com/wanghonggao007/errors"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/monitor"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/monitor"
 )
 
 //GetMonitorModules 获取监控模块列表

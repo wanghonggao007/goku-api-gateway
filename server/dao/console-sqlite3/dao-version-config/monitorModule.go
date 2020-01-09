@@ -3,7 +3,7 @@ package dao_version_config
 import (
 	"fmt"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
 )
 
 func GetMonitorModules(status int, isAll bool) (map[string]string, error) {

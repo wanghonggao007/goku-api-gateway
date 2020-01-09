@@ -5,12 +5,12 @@ import (
 	"io/ioutil"
 	"strings"
 
-	log "github.com/eolinker/goku-api-gateway/goku-log"
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
 
 	//mysql数据库驱动
-	_ "github.com/go-sql-driver/mysql"
+	_ "github.com/wanghonggao007/mysql"
 	//sqlite3数据库驱动
-	_ "github.com/mattn/go-sqlite3"
+	_ "github.com/wanghonggao007/go-sqlite3"
 )
 
 var (
@@ -57,7 +57,7 @@ func InitTable() error {
 		_, err = Tx.Exec(sql)
 		if err != nil {
 			Tx.Rollback()
-			log.Error("InitTable error:",err,"\t sql:",sql)
+			log.Error("InitTable error:", err, "\t sql:", sql)
 			return err
 		}
 	}

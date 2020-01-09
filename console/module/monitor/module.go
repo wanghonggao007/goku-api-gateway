@@ -1,10 +1,10 @@
 package monitor
 
 import (
-	"github.com/eolinker/goku-api-gateway/ksitigarbha"
+	"github.com/wanghonggao007/goku-api-gateway/ksitigarbha"
 
-	console_sqlite3 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3"
-	"github.com/pkg/errors"
+	"github.com/wanghonggao007/errors"
+	console_sqlite3 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3"
 )
 
 type MonitorModule struct {
@@ -26,19 +26,19 @@ func GetMonitorModules() ([]*MonitorModule, error) {
 	modules := make([]*MonitorModule, 0, len(names))
 
 	for _, name := range names {
-		model,_ := ksitigarbha.GetMonitorModuleModel(name)
-		  mod :=&MonitorModule{
-			  Name:         name,
-			  Config:       model.GetDefaultConfig(),
-			  ModuleStatus: 0,
-			  Desc:          model.GetDesc(),
-			  Models:        model.GetModel(),
-		  }
+		model, _ := ksitigarbha.GetMonitorModuleModel(name)
+		mod := &MonitorModule{
+			Name:         name,
+			Config:       model.GetDefaultConfig(),
+			ModuleStatus: 0,
+			Desc:         model.GetDesc(),
+			Models:       model.GetModel(),
+		}
 
 		v, ok := m[name]
 		if ok {
 			mod.ModuleStatus = v.ModuleStatus
-			c ,err := model.Decode(v.Config)
+			c, err := model.Decode(v.Config)
 			if err == nil {
 				mod.Config = c
 			}
@@ -51,15 +51,15 @@ func GetMonitorModules() ([]*MonitorModule, error) {
 
 func SetMonitorModule(moduleName string, config string, moduleStatus int) error {
 
-	model,has := ksitigarbha.GetMonitorModuleModel(moduleName)
+	model, has := ksitigarbha.GetMonitorModuleModel(moduleName)
 	if !has {
 		return errors.New("[error]the module does not exist")
 	}
 
-	if moduleStatus == 1  {
+	if moduleStatus == 1 {
 
-		_ ,err:= model.Decode(config)
-		if err != nil{
+		_, err := model.Decode(config)
+		if err != nil {
 			//errInfo := "[error]invalid config"
 			return err
 		}

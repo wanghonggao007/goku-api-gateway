@@ -2,12 +2,12 @@ package admin
 
 import (
 	"encoding/json"
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/node"
-	"github.com/eolinker/goku-api-gateway/console/module/versionConfig"
 	"net/http"
-)
 
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/node"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/versionConfig"
+)
 
 //GetVersionConfig 获取版本配置
 func GetVersionConfig(w http.ResponseWriter, r *http.Request) {
@@ -19,7 +19,7 @@ func GetVersionConfig(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if !node.Lock(instance){
+	if !node.Lock(instance) {
 		controller.WriteError(w, "700007", "cluster", "invalid instance", nil)
 		return
 	}
@@ -33,8 +33,8 @@ func GetVersionConfig(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	ctx := r.Context()
-	result ,err:= versionConfig.GetVersionConfig(ctx,nodeInfo.Cluster, version)
-	if err!= nil{
+	result, err := versionConfig.GetVersionConfig(ctx, nodeInfo.Cluster, version)
+	if err != nil {
 		// client close, connect close
 		return
 	}
@@ -43,8 +43,7 @@ func GetVersionConfig(w http.ResponseWriter, r *http.Request) {
 	result.BindAddress = nodeInfo.ListenAddress
 	result.AdminAddress = nodeInfo.AdminAddress
 	result.Instance = nodeInfo.NodeKey
-	data,_:= json.Marshal(result)
+	data, _ := json.Marshal(result)
 	w.Write(data)
-
 
 }

@@ -3,8 +3,8 @@ package dao_version_config
 import (
 	"strconv"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
-	"github.com/eolinker/goku-api-gateway/config"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/config"
 )
 
 //GetGlobalPlugin 获取全局插件

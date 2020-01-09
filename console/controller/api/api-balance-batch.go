@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/api"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/api"
 )
 
 //BatchSetBalanceAPI 批量设置接口负载

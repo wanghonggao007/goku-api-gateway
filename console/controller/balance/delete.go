@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/balance"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/balance"
 )
 
 //DeleteBalance 删除负载配置

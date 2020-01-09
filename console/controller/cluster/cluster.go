@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/pkg/errors"
+	"github.com/wanghonggao007/errors"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/cluster"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/cluster"
 )
 
 //GetClusterList 获取集群列表

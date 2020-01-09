@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	module "github.com/eolinker/goku-api-gateway/console/module/config-log"
+	module "github.com/wanghonggao007/goku-api-gateway/console/module/config-log"
 )
 
 //Handle handle

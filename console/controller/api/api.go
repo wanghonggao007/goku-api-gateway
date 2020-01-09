@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/account"
-	"github.com/eolinker/goku-api-gateway/console/module/api"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/account"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/api"
 )
 
 //AddAPI 新增接口

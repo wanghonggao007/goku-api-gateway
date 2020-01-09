@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
-	"github.com/eolinker/goku-api-gateway/config"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/config"
 )
 
 //GetAPIContent 获取接口信息

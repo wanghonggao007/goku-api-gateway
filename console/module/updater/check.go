@@ -1,7 +1,7 @@
 package updater
 
 import (
-	"github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3/updater"
+	"github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3/updater"
 )
 
 //IsTableExist 检查table是否存在

@@ -3,8 +3,8 @@ package console_sqlite3
 import (
 	SQL "database/sql"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
-	"github.com/eolinker/goku-api-gateway/utils"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/utils"
 )
 
 //Login 登录

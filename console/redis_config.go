@@ -3,7 +3,7 @@ package console
 import (
 	"strings"
 
-	"github.com/eolinker/goku-api-gateway/server/entity"
+	"github.com/wanghonggao007/goku-api-gateway/server/entity"
 )
 
 //ClusterRedisConfig 集群redis配置

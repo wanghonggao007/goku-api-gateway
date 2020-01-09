@@ -2,14 +2,15 @@ package main
 
 import (
 	"flag"
+	"fmt"
 
-	"github.com/eolinker/goku-api-gateway/console/module/account"
-	log "github.com/eolinker/goku-api-gateway/goku-log"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/account"
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
 
-	"github.com/eolinker/goku-api-gateway/common/conf"
-	"github.com/eolinker/goku-api-gateway/common/general"
-	"github.com/eolinker/goku-api-gateway/console"
-	"github.com/eolinker/goku-api-gateway/utils"
+	"github.com/wanghonggao007/goku-api-gateway/common/conf"
+	"github.com/wanghonggao007/goku-api-gateway/common/general"
+	"github.com/wanghonggao007/goku-api-gateway/console"
+	"github.com/wanghonggao007/goku-api-gateway/utils"
 )
 
 var (
@@ -19,6 +20,7 @@ var (
 )
 
 func main() {
+	fmt.Println("main")
 	flag.StringVar(&confFilePath, "c", "./config/goku.conf", "Please provide a valid configuration file path")
 	flag.StringVar(&userName, "u", "", "Please provide user name")
 	flag.StringVar(&userPassword, "p", "", "Please provide user password")

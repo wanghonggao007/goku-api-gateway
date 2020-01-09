@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/auth"
-	log "github.com/eolinker/goku-api-gateway/goku-log"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/auth"
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
 )
 
 //GetAuthStatus 获取认证状态

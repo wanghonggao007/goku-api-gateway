@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	database2 "github.com/eolinker/goku-api-gateway/common/database"
-	log "github.com/eolinker/goku-api-gateway/goku-log"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	database2 "github.com/wanghonggao007/goku-api-gateway/common/database"
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 //AddProject 新建项目

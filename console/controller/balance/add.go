@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/eolinker/goku-api-gateway/common/auto-form"
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/balance"
-	"github.com/go-sql-driver/mysql"
+	"github.com/wanghonggao007/goku-api-gateway/common/auto-form"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/balance"
+	"github.com/wanghonggao007/mysql"
 )
 
 //AddBalance 新增负载配置

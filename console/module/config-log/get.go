@@ -3,9 +3,9 @@ package config_log
 import (
 	"fmt"
 
-	"github.com/eolinker/goku-api-gateway/common/auto-form"
-	log "github.com/eolinker/goku-api-gateway/goku-log"
-	config_log "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3/config-log"
+	"github.com/wanghonggao007/goku-api-gateway/common/auto-form"
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
+	config_log "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3/config-log"
 )
 
 //Get 获取普通日志配置

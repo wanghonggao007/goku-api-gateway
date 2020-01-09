@@ -3,12 +3,12 @@ package console
 import (
 	"net/http"
 
-	"github.com/eolinker/goku-api-gateway/console/updater"
+	"github.com/wanghonggao007/goku-api-gateway/console/updater"
 
-	"github.com/eolinker/goku-api-gateway/common/conf"
-	"github.com/eolinker/goku-api-gateway/console/admin"
-	"github.com/eolinker/goku-api-gateway/console/module/account"
-	log "github.com/eolinker/goku-api-gateway/goku-log"
+	"github.com/wanghonggao007/goku-api-gateway/common/conf"
+	"github.com/wanghonggao007/goku-api-gateway/console/admin"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/account"
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
 )
 
 //Server 服务

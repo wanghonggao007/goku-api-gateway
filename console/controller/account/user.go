@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/account"
-	"github.com/eolinker/goku-api-gateway/utils"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/account"
+	"github.com/wanghonggao007/goku-api-gateway/utils"
 )
 
 //Logout 用户注销

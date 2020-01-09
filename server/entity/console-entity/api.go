@@ -1,6 +1,6 @@
 package entity
 
-import "github.com/eolinker/goku-api-gateway/config"
+import "github.com/wanghonggao007/goku-api-gateway/config"
 
 //API 接口
 type API struct {

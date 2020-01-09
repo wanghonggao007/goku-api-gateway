@@ -1,6 +1,6 @@
 package updater
 
-import "github.com/eolinker/goku-api-gateway/common/database"
+import "github.com/wanghonggao007/goku-api-gateway/common/database"
 
 //GetTableVersion 获取当前表版本号
 func GetTableVersion(name string) string {

@@ -3,9 +3,9 @@ package dao_version_config
 import (
 	"encoding/json"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
-	"github.com/eolinker/goku-api-gateway/config"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/config"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 //GetBalances 获取balance信息

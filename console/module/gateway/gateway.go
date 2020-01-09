@@ -1,8 +1,8 @@
 package gateway
 
 import (
-	v "github.com/eolinker/goku-api-gateway/common/version"
-	console_sqlite3 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3"
+	v "github.com/wanghonggao007/goku-api-gateway/common/version"
+	console_sqlite3 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3"
 )
 
 //BaseGatewayInfo 网关基本配置

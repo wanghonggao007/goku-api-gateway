@@ -1,9 +1,9 @@
 package goku311
 
 import (
-	"github.com/eolinker/goku-api-gateway/common/database"
-	"github.com/eolinker/goku-api-gateway/console/updater"
-	updaterDao "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3/updater"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/console/updater"
+	updaterDao "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3/updater"
 )
 
 //Version 版本号

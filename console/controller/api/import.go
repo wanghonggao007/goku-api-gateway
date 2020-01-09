@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/api"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/api"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 //ImportAPIGroupFromAms 导入分组

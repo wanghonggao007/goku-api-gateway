@@ -3,7 +3,7 @@ package dao_service
 import (
 	"time"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
 )
 
 const sqlAdd = "INSERT INTO `goku_service_config`(`name`,`driver`,`default`,`desc`,`config`,`clusterConfig`,`healthCheck`,`healthCheckPath`,`healthCheckPeriod`,`healthCheckCode`,`healthCheckTimeOut`,`createTime`,`updateTime`)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?);"

@@ -3,7 +3,7 @@ package config
 import (
 	"encoding/json"
 
-	"github.com/eolinker/goku-api-gateway/ksitigarbha"
+	"github.com/wanghonggao007/goku-api-gateway/ksitigarbha"
 )
 
 //ModuleNameSpace 模块空间名称

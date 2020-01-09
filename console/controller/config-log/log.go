@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/eolinker/goku-api-gateway/common/auto-form"
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	module "github.com/eolinker/goku-api-gateway/console/module/config-log"
+	"github.com/wanghonggao007/goku-api-gateway/common/auto-form"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	module "github.com/wanghonggao007/goku-api-gateway/console/module/config-log"
 )
 
 //LogHandler 日志处理器

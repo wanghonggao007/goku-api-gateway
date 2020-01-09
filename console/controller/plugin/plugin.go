@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/plugin"
-	plugin_config "github.com/eolinker/goku-api-gateway/console/module/plugin/plugin-config"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/plugin"
+	plugin_config "github.com/wanghonggao007/goku-api-gateway/console/module/plugin/plugin-config"
 )
 
 // GetPluginList 获取插件列表

@@ -1,9 +1,9 @@
 package console
 
 import (
-	_ "github.com/eolinker/goku-api-gateway/console/updater/manager"
-	graphite "github.com/eolinker/goku-api-gateway/module/graphite/config"
-	prometheus "github.com/eolinker/goku-api-gateway/module/prometheus/config"
+	_ "github.com/wanghonggao007/goku-api-gateway/console/updater/manager"
+	graphite "github.com/wanghonggao007/goku-api-gateway/module/graphite/config"
+	prometheus "github.com/wanghonggao007/goku-api-gateway/module/prometheus/config"
 )
 
 func moduleRegister() {

@@ -1,7 +1,7 @@
 package console_sqlite3
 
 import (
-	database2 "github.com/eolinker/goku-api-gateway/common/database"
+	database2 "github.com/wanghonggao007/goku-api-gateway/common/database"
 )
 
 //AddStrategyGroup 新建策略组分组

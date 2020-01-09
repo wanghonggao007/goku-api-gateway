@@ -3,24 +3,24 @@ package console
 import (
 	"net/http"
 
-	"github.com/eolinker/goku-api-gateway/console/controller/monitor"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/monitor"
 
-	"github.com/eolinker/goku-api-gateway/console/controller/updater"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/updater"
 
-	config_log "github.com/eolinker/goku-api-gateway/console/controller/config-log"
-	"github.com/eolinker/goku-api-gateway/console/controller/gateway"
+	config_log "github.com/wanghonggao007/goku-api-gateway/console/controller/config-log"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/gateway"
 
-	"github.com/eolinker/goku-api-gateway/console/controller/account"
-	"github.com/eolinker/goku-api-gateway/console/controller/api"
-	"github.com/eolinker/goku-api-gateway/console/controller/auth"
-	"github.com/eolinker/goku-api-gateway/console/controller/balance"
-	"github.com/eolinker/goku-api-gateway/console/controller/cluster"
-	"github.com/eolinker/goku-api-gateway/console/controller/discovery"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/account"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/api"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/auth"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/balance"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/cluster"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/discovery"
 
-	"github.com/eolinker/goku-api-gateway/console/controller/node"
-	"github.com/eolinker/goku-api-gateway/console/controller/plugin"
-	"github.com/eolinker/goku-api-gateway/console/controller/project"
-	"github.com/eolinker/goku-api-gateway/console/controller/strategy"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/node"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/plugin"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/project"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller/strategy"
 )
 
 //Router 路由

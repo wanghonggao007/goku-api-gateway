@@ -1,6 +1,6 @@
 package entity
 
-import "github.com/eolinker/goku-api-gateway/server/driver"
+import "github.com/wanghonggao007/goku-api-gateway/server/driver"
 
 //Balance 负载
 type Balance struct {

@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 //EXPIRE 心跳检测过期时间
@@ -48,7 +48,7 @@ func (m *_StatusManager) get(id string) (time.Time, bool) {
 }
 
 type _InstanceLocker struct {
-	locker sync.RWMutex
+	locker    sync.RWMutex
 	instances map[string]bool
 }
 
@@ -58,22 +58,22 @@ func newInstanceLocker() *_InstanceLocker {
 		instances: make(map[string]bool),
 	}
 }
-func  (l * _InstanceLocker)IsLock(key string)bool  {
+func (l *_InstanceLocker) IsLock(key string) bool {
 	l.locker.RLock()
-	locked :=l.instances[key]
+	locked := l.instances[key]
 	l.locker.RUnlock()
 	return locked
 }
-func (l * _InstanceLocker)Lock(key string)bool{
+func (l *_InstanceLocker) Lock(key string) bool {
 
-	locked :=l.IsLock(key)
-	if locked{
+	locked := l.IsLock(key)
+	if locked {
 		return false
 	}
 
 	l.locker.Lock()
-	locked =l.instances[key]
-	if locked{
+	locked = l.instances[key]
+	if locked {
 		l.locker.Unlock()
 		return false
 	}
@@ -81,7 +81,7 @@ func (l * _InstanceLocker)Lock(key string)bool{
 	l.locker.Unlock()
 	return true
 }
-func (l * _InstanceLocker)UnLock(key string){
+func (l *_InstanceLocker) UnLock(key string) {
 
 	l.locker.Lock()
 	l.instances[key] = false
@@ -90,13 +90,13 @@ func (l * _InstanceLocker)UnLock(key string){
 
 //Refresh refresh
 
-func Refresh( instance string) {
+func Refresh(instance string) {
 
 	manager.refresh(instance)
 }
 
 //IsLive 通过ip和端口获取当前节点在线状态
-func IsLive( instance string) bool {
+func IsLive(instance string) bool {
 
 	t, has := manager.get(instance)
 
@@ -114,7 +114,7 @@ func IsLive( instance string) bool {
 func ResetNodeStatus(nodes ...*entity.Node) {
 	for _, node := range nodes {
 
-		if instanceLocker.IsLock(node.NodeKey) ||  IsLive(node.NodeKey) {
+		if instanceLocker.IsLock(node.NodeKey) || IsLive(node.NodeKey) {
 			node.NodeStatus = 1
 		} else {
 			node.NodeStatus = 0
@@ -122,14 +122,14 @@ func ResetNodeStatus(nodes ...*entity.Node) {
 	}
 }
 
-func Lock(key string)bool{
+func Lock(key string) bool {
 	return instanceLocker.Lock(key)
 }
-func UnLock(key string)  {
+func UnLock(key string) {
 	instanceLocker.UnLock(key)
 	Refresh(key)
 }
 
-func IsLock(key string)bool{
+func IsLock(key string) bool {
 	return instanceLocker.Lock(key)
 }

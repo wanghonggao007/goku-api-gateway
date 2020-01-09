@@ -3,9 +3,9 @@ package strategy
 import (
 	"errors"
 
-	console_sqlite3 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3"
+	console_sqlite3 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3"
 
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 //AddStrategy 新增策略组

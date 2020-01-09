@@ -3,12 +3,12 @@ package versionConfig
 import (
 	"encoding/json"
 
-	"github.com/eolinker/goku-api-gateway/ksitigarbha"
+	"github.com/wanghonggao007/goku-api-gateway/ksitigarbha"
 
-	console_sqlite3 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3"
-	dao_version_config2 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3/dao-version-config"
+	console_sqlite3 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3"
+	dao_version_config2 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3/dao-version-config"
 
-	"github.com/eolinker/goku-api-gateway/config"
+	"github.com/wanghonggao007/goku-api-gateway/config"
 )
 
 var authNames = map[string]string{
@@ -82,8 +82,8 @@ func buildVersionConfig(v string) (string, string, string) {
 	modules, _ := dao_version_config2.GetMonitorModules(1, false)
 	if modules != nil {
 		for key, config := range modules {
-			module ,has:= ksitigarbha.GetMonitorModuleModel(key)
-			if has{
+			module, has := ksitigarbha.GetMonitorModuleModel(key)
+			if has {
 				ms[module.GetName()] = config
 			}
 		}

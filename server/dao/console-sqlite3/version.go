@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
 
-	"github.com/eolinker/goku-api-gateway/config"
+	"github.com/wanghonggao007/goku-api-gateway/config"
 )
 
 //GetVersionList 获取版本列表

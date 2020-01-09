@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strings"
 
-	dao_service2 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3/dao-service"
+	dao_service2 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3/dao-service"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/service"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/service"
 )
 
 func delete(w http.ResponseWriter, r *http.Request) {

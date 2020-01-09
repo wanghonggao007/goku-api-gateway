@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
-	v "github.com/eolinker/goku-api-gateway/common/version"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	v "github.com/wanghonggao007/goku-api-gateway/common/version"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 //AddNode 新增节点信息

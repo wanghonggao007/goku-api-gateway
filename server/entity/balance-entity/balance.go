@@ -6,7 +6,7 @@ import (
 	"strings"
 	"unicode"
 
-	jsoniter "github.com/json-iterator/go"
+	jsoniter "github.com/wanghonggao007/go"
 )
 
 //BalanceInfoEntity 负载信息实体

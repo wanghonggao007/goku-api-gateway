@@ -3,9 +3,9 @@ package updater
 import (
 	"net/http"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
 
-	"github.com/eolinker/goku-api-gateway/console/module/updater"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/updater"
 )
 
 //IsTableExist 检查table是否存在

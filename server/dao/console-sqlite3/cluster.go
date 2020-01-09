@@ -1,8 +1,8 @@
 package console_sqlite3
 
 import (
-	"github.com/eolinker/goku-api-gateway/common/database"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 //AddCluster 新增集群
@@ -92,7 +92,7 @@ func GetClusters() ([]*entity.Cluster, error) {
 	defer rows.Close()
 	for rows.Next() {
 		var cluster entity.Cluster
-		err = rows.Scan(&cluster.ID, &cluster.Name, &cluster.Title, &cluster.Note,&cluster.NodeCount)
+		err = rows.Scan(&cluster.ID, &cluster.Name, &cluster.Title, &cluster.Note, &cluster.NodeCount)
 		if err != nil {
 			return []*entity.Cluster{}, err
 		}

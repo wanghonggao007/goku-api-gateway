@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
-	"github.com/eolinker/goku-api-gateway/console/module/cluster"
-	"github.com/eolinker/goku-api-gateway/console/module/node"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/cluster"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/node"
 )
 
 //AddNodeGroup 新增节点分组

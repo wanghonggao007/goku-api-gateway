@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/eolinker/goku-api-gateway/console/module/versionConfig"
+	"github.com/wanghonggao007/goku-api-gateway/console/module/versionConfig"
 
-	"github.com/eolinker/goku-api-gateway/console/controller"
+	"github.com/wanghonggao007/goku-api-gateway/console/controller"
 )
 
 //GetVersionList 获取版本列表

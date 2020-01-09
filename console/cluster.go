@@ -1,16 +1,18 @@
 package console
 
 import (
+	"fmt"
 	"strconv"
 
-	"github.com/pkg/errors"
+	"github.com/wanghonggao007/errors"
 
-	"github.com/eolinker/goku-api-gateway/common/conf"
-	"github.com/eolinker/goku-api-gateway/server/entity"
+	"github.com/wanghonggao007/goku-api-gateway/common/conf"
+	"github.com/wanghonggao007/goku-api-gateway/server/entity"
 )
 
 func getDefaultDatabase() (*entity.ClusterDB, error) {
 	dbType := conf.MastValue("db_type", "sqlite3")
+	fmt.Println(dbType)
 	switch dbType {
 	case mysqlDriver:
 		{

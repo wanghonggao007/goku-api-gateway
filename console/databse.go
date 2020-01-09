@@ -3,8 +3,8 @@ package console
 import (
 	"fmt"
 
-	"github.com/eolinker/goku-api-gateway/common/database"
-	"github.com/eolinker/goku-api-gateway/server/entity"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	"github.com/wanghonggao007/goku-api-gateway/server/entity"
 )
 
 const (
@@ -47,9 +47,11 @@ func InitDatabase() {
 		panic(err)
 	}
 	c := ClusterDatabaseConfig(*def)
+	fmt.Println(c)
 	e := database.InitConnection(&c)
 	if e != nil {
-		panic(e)
+		//panic(e) //w---
+		fmt.Println(e) //w+++
 	}
 }
 

@@ -1,9 +1,9 @@
 package dao_balance_update
 
 import (
-	"github.com/eolinker/goku-api-gateway/common/database"
-	dao_service2 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3/dao-service"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/balance-entity"
+	"github.com/wanghonggao007/goku-api-gateway/common/database"
+	dao_service2 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3/dao-service"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/balance-entity"
 )
 
 //GetAllOldVerSion 获取所有旧负载配置

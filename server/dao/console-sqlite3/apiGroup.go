@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	database2 "github.com/eolinker/goku-api-gateway/common/database"
+	database2 "github.com/wanghonggao007/goku-api-gateway/common/database"
 )
 
 //AddAPIGroup 新建接口分组

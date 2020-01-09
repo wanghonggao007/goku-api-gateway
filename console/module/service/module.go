@@ -3,9 +3,9 @@ package service
 import (
 	"fmt"
 
-	dao_service2 "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3/dao-service"
-	driver2 "github.com/eolinker/goku-api-gateway/server/driver"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/console-entity"
+	dao_service2 "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3/dao-service"
+	driver2 "github.com/wanghonggao007/goku-api-gateway/server/driver"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/console-entity"
 )
 
 const _TableName = "goku_service_config"

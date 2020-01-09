@@ -3,9 +3,9 @@ package config_log
 import (
 	"fmt"
 
-	log "github.com/eolinker/goku-api-gateway/goku-log"
-	config_log "github.com/eolinker/goku-api-gateway/server/dao/console-sqlite3/config-log"
-	entity "github.com/eolinker/goku-api-gateway/server/entity/config-log"
+	log "github.com/wanghonggao007/goku-api-gateway/goku-log"
+	config_log "github.com/wanghonggao007/goku-api-gateway/server/dao/console-sqlite3/config-log"
+	entity "github.com/wanghonggao007/goku-api-gateway/server/entity/config-log"
 )
 
 //Set 设置参数
